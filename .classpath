@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Admin/Desktop/springjdbc/lib/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Admin/Desktop/springjdbc/lib/aspectjweaver.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Admin/Desktop/springjdbc/lib/cglib-nodep-2.1_3.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Admin/Desktop/springjdbc/lib/commons-collections.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Admin/Desktop/springjdbc/lib/commons-dbcp.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Admin/Desktop/springjdbc/lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Admin/Desktop/springjdbc/lib/commons-logging-1.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Admin/Desktop/springjdbc/lib/commons-pool.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Admin/Desktop/springjdbc/lib/hsqldb.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Admin/Desktop/springjdbc/lib/mysql-connector-java-5[1].0.5-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Admin/Desktop/springjdbc/lib/spring.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Admin/Desktop/com.springsource.org.apache.oro-2.0.8.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

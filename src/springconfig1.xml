@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC  "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+  <!--CONFIG-->
+  <bean id="businesslogicbean"
+  class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="proxyInterfaces">
+      <value>aop.IBusinessLogic</value>
+    </property>
+    <property name="target">
+      <ref local="beanTarget"/>
+    </property>
+    <property name="interceptorNames">
+      <list>
+        <value>tracingBeforeAdvisor</value>
+        <value>tracingAfterAdvisor</value>
+        <value>loggingThrowsAdvisor</value>
+      </list>
+    </property>
+  </bean>
+
+  <!--CLASS-->
+  <bean id="beanTarget"
+  class="aop.BusinessLogic"/>
+
+  <!-- Advisor pointcut definition for before advice -->
+  <bean id="tracingBeforeAdvisor"
+  class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+    <property name="advice">
+      <ref local="theTracingBeforeAdvice"/>
+    </property>
+    <property name="pattern">
+      <value>.*</value>
+    </property>
+  </bean>
+  
+  <!-- Advisor pointcut definition for after advice -->
+  <bean id="tracingAfterAdvisor"
+  class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+    <property name="advice">
+      <ref local="theTracingAfterAdvice"/>
+    </property>
+    <property name="pattern">
+      <value>.*</value>
+    </property>
+  </bean>
+  
+  <!-- Advisor pointcut definition for throws advice -->
+  <bean id="loggingThrowsAdvisor"
+  class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+    <property name="advice">
+      <ref local="theLoggingThrowsAdvice"/>
+    </property>
+    <property name="pattern">
+      <value>.*</value>
+    </property>
+  </bean>
+
+  <!--ADVICE-->
+  <bean id="theTracingBeforeAdvice"
+  class="aop.TracingBeforeAdvice"/>
+  <bean id="theTracingAfterAdvice"
+  class="aop.TracingAfterAdvice"/>
+  <bean id="theLoggingThrowsAdvice"
+  class="aop.LoggingThrowsAdvice"/>
+</beans>
