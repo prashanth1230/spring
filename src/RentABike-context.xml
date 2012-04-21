@@ -1,0 +1,24 @@
+<!--<?xml version="1.0"?>-->
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+     
+   <bean id="rentaBike1" class="com.spring.ArrayListRentABike">
+      
+   </bean>
+
+   <bean id="commandLineView1" class="com.spring.CommandLineView">
+      <property name="rentaBike"><ref bean="rentaBike1"/></property>
+   </bean>
+   
+   <bean id="rentaBike2" class="com.spring.constructor.ArrayListRentABike">
+      
+   </bean>
+
+   <bean id="commandLineView3" class="com.spring.constructor.CommandLineView">
+      <constructor-arg index="0">
+         <ref bean="rentaBike2"/>
+      </constructor-arg>
+   </bean>
+
+</beans>
