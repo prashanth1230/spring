@@ -8,7 +8,7 @@
 	</bean>
 	<bean name="/submitAgain.htm" class="com.springmvc.action.HelloController">
 		<property name="greeting">
-			<value>Hello World</value>
+			<value>Another message</value>
 		</property>
 	</bean>
 	<bean id="viewResolver"
