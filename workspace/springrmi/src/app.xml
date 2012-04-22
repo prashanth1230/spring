@@ -25,11 +25,11 @@
 			value="com.banu.rmi.DeliveryServiceIntf" />
 		<property name="registryPort" value="1234" />
 	</bean>
-
+<!--  
 	<bean name="/MyService"
 		class="org.springframework.remoting.caucho.HessianServiceExporter">
 		<property name="service" ref="deliveryService" />
 		<property name="serviceInterface"
 			value="com.banu.rmi.DeliveryServiceIntf" />
-	</bean>
+	</bean>-->
 </beans>
