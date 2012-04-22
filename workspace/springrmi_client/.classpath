@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.6.0_26"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Admin/workspace/springrmi/lib/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Admin/workspace/springrmi/lib/aspectjweaver.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Admin/workspace/springrmi/lib/cglib-nodep-2.1_3.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Admin/workspace/springrmi/lib/commons-collections.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Admin/workspace/springrmi/lib/commons-dbcp.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Admin/workspace/springrmi/lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Admin/workspace/springrmi/lib/commons-logging-1.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Admin/workspace/springrmi/lib/commons-pool.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Admin/workspace/springrmi/lib/hessian-3.0.20.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Admin/workspace/springrmi/lib/hsqldb.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Admin/workspace/springrmi/lib/mysql-connector-java-5[1].0.5-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Admin/workspace/springrmi/lib/spring.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
