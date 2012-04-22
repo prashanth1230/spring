@@ -29,17 +29,17 @@ font-style: italic;
 		</tr>
 		<tr>
 			<td>Gender :</td>
-			<td><form:radiobutton path="gender" value="M" label="M" /> 
-				<form:radiobutton path="gender" value="F" label="F" /></td>
+			<td><form:radiobutton path="gender" value="true" label="M" /> 
+				<form:radiobutton path="gender" value="false" label="F" /></td>
 			<td><form:errors path="gender" cssClass="error" /></td>	
 		</tr>
 		<tr>
 			<td>Country :</td>
 			<td><form:select path="country">
 				<form:option value="" label="Select" />
-				<form:option value="1" label="India" />
-				<form:option value="2" label="USA" />
-				<form:option value="3" label="UK" />
+				<form:option value="India" label="India" />
+				<form:option value="USA" label="USA" />
+				<form:option value="UK" label="UK" />
 			</form:select></td>
 			<td><form:errors path="country" cssClass="error" /></td>
 		</tr>

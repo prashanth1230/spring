@@ -2,12 +2,27 @@ package com.rajesh.domain;
 
 public class User {
 
+	public User(String name, String password, String gender, String country,
+			String aboutYou, String community, Boolean mailingList) {
+		super();
+		this.name = name;
+		this.password = password;
+		this.gender = gender;
+		this.country = country;
+		this.aboutYou = aboutYou;
+		this.community = community;
+		this.mailingList = mailingList;
+	}
+	
+	public User() {
+		
+	}
 	private String name;
 	private String password;
 	private String gender;
 	private String country;
 	private String aboutYou;
-	private String[] community;
+	private String community;
 	private Boolean mailingList;
 	
 	public String getName() {
@@ -40,10 +55,10 @@ public class User {
 	public void setAboutYou(String aboutYou) {
 		this.aboutYou = aboutYou;
 	}
-	public String[] getCommunity() {
+	public String getCommunity() {
 		return community;
 	}
-	public void setCommunity(String[] community) {
+	public void setCommunity(String community) {
 		this.community = community;
 	}
 	public Boolean getMailingList() {

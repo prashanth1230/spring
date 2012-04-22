@@ -24,7 +24,7 @@ public class UserValidator implements Validator {
 		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "aboutYou",
 				"aboutYou.required");
 		User user = (User) target;
-		if (user.getCommunity().length == 0) {
+		if (user.getCommunity() == null) {
 			errors.rejectValue("community", "community.required");
 		}
 	}
